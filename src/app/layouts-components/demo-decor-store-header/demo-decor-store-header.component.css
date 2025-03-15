@@ -1,0 +1,26 @@
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-menu.show {
+    display: block;
+    opacity: 1;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover edildiğinde dropdown menüyü aç */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-menu li a {
+    text-decoration: none !important;
+}
