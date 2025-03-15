@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { WishlistRoutingModule } from './wishlist-routing.module';
 import { DemoDecorStoreWishlistComponent } from '../demo-decor-store-wishlist.component';
+import { SharedModule } from '../../../module/shared/shared.module';
 
 
 @NgModule({
   declarations: [DemoDecorStoreWishlistComponent],
   imports: [
-    CommonModule,
+    SharedModule,
     WishlistRoutingModule
   ]
 })

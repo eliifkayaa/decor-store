@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { HomeRoutingModule } from './home-routing.module';
 import { DemoDecorStoreComponent } from '../demo-decor-store.component';
+
+import { SharedModule } from '../../../module/shared/shared.module';
 
 @NgModule({
   declarations: [DemoDecorStoreComponent],
   imports: [
-    CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule,
   ]
 })
 export class HomeModule { }

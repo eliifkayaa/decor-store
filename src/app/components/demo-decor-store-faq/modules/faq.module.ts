@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { DemoDecorStoreFaqComponent } from '../demo-decor-store-faq.component';
 import { FaqRoutingModule } from './faq-routing.module';
+import { SharedModule } from '../../../module/shared/shared.module';
 
 
 @NgModule({
   declarations: [DemoDecorStoreFaqComponent],
   imports: [
-    CommonModule,
+    SharedModule,
     FaqRoutingModule
   ]
 })

@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { DemoDecorStoreAccountComponent } from '../demo-decor-store-account.component';
 import { AccountRoutingModule } from './account-routing.module';
+import { SharedModule } from '../../../module/shared/shared.module';
 
 
 @NgModule({
   declarations: [DemoDecorStoreAccountComponent],
   imports: [
-    CommonModule,
+    SharedModule,
     AccountRoutingModule
   ]
 })
