@@ -1,12 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <title>Crafto - The Multipurpose HTML5 Template</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="author" content="ThemeZaa">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos."> 
+<head>
+<title>Crafto - The Multipurpose HTML5 Template</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="author" content="ThemeZaa">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos."> 
 <!-- favicon icon -->
   <link rel="shortcut icon" href="/assets/images/favicon.png">
   <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon-57x57.png">
@@ -25,21 +25,86 @@
   <link rel="stylesheet" href="/assets/css/style.css"/>
   <link rel="stylesheet" href="/assets/css/responsive.css"/>
   <link rel="stylesheet" href="/assets/demos/decor-store/decor-store.css" />
- 
+
+  <!-- Plugins CSS File Shop-->
+   <link rel="stylesheet" href="/assets/cssfordemo26-shop/assets/css/bootstrap.min.css"> 
+
+  <!-- Main CSS File Shop-->
+   <!-- <link rel="stylesheet" href="/assets/cssfordemo26-shop/assets/css/demo26.min.css">  -->
+  <link rel="stylesheet" type="text/css" href="/assets/cssfordemo26-shop/assets/vendor/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/cssfordemo26-shop/assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
+
 </head>
 <body data-mobile-nav-style="classic">
   <app-root></app-root>
 
+  <!-- Plugins JS File -->
+   <script src="/assets/cssfordemo26-shop/assets/js/jquery.min.js"></script>
+  <script src="/assets/cssfordemo26-shop/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/cssfordemo26-shop/assets/js/plugins.min.js"></script>
+  <script src="/assets/cssfordemo26-shop/assets/js/nouislider.min.js"></script> 
+
+  <!-- Main JS File -->
+   <script src="/assets/cssfordemo26-shop/assets/js/main.min.js"></script> 
+
   <!-- javascript libraries -->
   <script type="text/javascript" src="/assets/js/jquery.js"></script>
   <script type="text/javascript" src="/assets/js/vendors.min.js"></script>
+
   <!-- slider revolution core javaScript files -->
   <script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
   <script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
  <!-- Slider Revolution add on files -->
  <script type='text/javascript' src='/assets/revolution/revolution-addons/particles/js/revolution.addon.particles.min.js?ver=1.0.3'></script>
- 
+
+  <!-- Anime.js Kütüphanesi -->
+  <script src="/assets/js/vendors/anime.min.js"></script>
+
+  <!-- Animasyon Fixleri -->
+<!-- <script type="text/javascript">
+  function applyAnimations() {
+      document.querySelectorAll("[data-anime]").forEach(el => {
+          try {
+              let animationData = JSON.parse(el.getAttribute("data-anime"));
+
+              if (animationData.el === "childs") {
+                  let children = el.children;
+                  anime({
+                      targets: children,
+                      opacity: animationData.opacity || [0, 1],
+                      translateX: animationData.translateX || [0, 0],
+                      translateY: animationData.translateY || [0, 0],
+                      duration: animationData.duration || 800,
+                      delay: anime.stagger(animationData.staggervalue || 150),
+                      easing: animationData.easing || 'easeOutQuad',
+                  });
+              } else {
+                  anime({
+                      targets: el,
+                      opacity: animationData.opacity || [0, 1],
+                      translateX: animationData.translateX || [0, 0],
+                      translateY: animationData.translateY || [0, 0],
+                      duration: animationData.duration || 800,
+                      delay: animationData.delay || 100,
+                      easing: animationData.easing || 'easeOutQuad',
+                  });
+              }
+          } catch (error) {
+              console.error("Anime.js JSON parse hatası:", error);
+          }
+      });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+          applyAnimations();
+      }, 1000);
+  });
+
+</script> -->
+
  <script type="text/javascript" src="/assets/js/main.js"></script>
+
 </body>
 </html>

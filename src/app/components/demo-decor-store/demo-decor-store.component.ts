@@ -9,9 +9,7 @@ declare var jQuery: any;
 })
 export class DemoDecorStoreComponent implements OnInit, AfterViewInit {
 
-  ngOnInit(): void {
-    console.log("DemoDecorStoreComponent initialized.");
-  }
+  ngOnInit(): void {}
 
   ngAfterViewInit(): void {
     setTimeout(() => {
@@ -20,13 +18,11 @@ export class DemoDecorStoreComponent implements OnInit, AfterViewInit {
             return;
         }
         if (!jQuery.fn || !jQuery.fn.revolution) {
-            console.error("Revolution Slider eklentisi yüklenmemiş!");
             return;
         }
         
         const sliderElement = jQuery('#decor-store-slider');
         if (sliderElement.length) {
-            console.log("Revolution Slider başlatılıyor...");
             sliderElement.show().revolution({
                 sliderType: "standard",
                 delay: 9000,
