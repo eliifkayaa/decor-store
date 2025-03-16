@@ -7,7 +7,7 @@ const routes: Routes = [
   {path: 'account', loadChildren: () => import('./components/demo-decor-store-account/modules/account.module').then(m => m.AccountModule)},
   {path: 'blog', loadChildren: () => import('./components/demo-decor-store-blog/modules/blog.module').then(m => m.BlogModule)},
   {path: 'blog-single', loadChildren: () => import('./components/demo-decor-store-blog-single-classic/modules/blog-single.module').then(m => m.BlogSingleModule)},
-  {path: 'cart', loadChildren: () => import('./components/demo-decor-store-blog/modules/blog.module').then(m => m.BlogModule)},
+  {path: 'cart', loadChildren: () => import('./components/demo-decor-store-cart/modules/cart.module').then(m => m.CartModule)},
   {path: 'checkout', loadChildren: () => import('./components/demo-decor-store-checkout/modules/checkout.module').then(m => m.CheckoutModule)},
   {path: 'collections', loadChildren: () => import('./components/demo-decor-store-collections/modules/collections.module').then(m => m.CollectionsModule)},
   {path: 'contact', loadChildren: () => import('./components/demo-decor-store-contact/modules/contact.module').then(m => m.ContactModule)},
