@@ -64,7 +64,6 @@ export class DemoDecorStoreComponent implements AfterViewInit {
         console.error("#decor-store-slider bulunamadı!");
       }
 
-      // **Swiper slider'ı yeniden başlat**
       this.animeLoaderService.reInitializeSwiper();
     }, 500);
   }

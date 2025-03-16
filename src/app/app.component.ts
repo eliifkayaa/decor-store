@@ -27,7 +27,6 @@ export class AppComponent implements OnInit {
     this.reInitializeSwiper();
   }
 
-  // 🔄 Swiper'ı tekrar başlat
   reInitializeSwiper() {
     setTimeout(() => {
       if (typeof Swiper !== 'undefined') {
@@ -54,7 +53,6 @@ export class AppComponent implements OnInit {
     }, 500);
   }
 
-  // 🔄 Isotope'yi tekrar başlat (Önceden eklediğimiz)
   reInitializeIsotope() {
     setTimeout(() => {
       if (typeof jQuery !== 'undefined' && typeof jQuery.fn.isotope === 'function') {

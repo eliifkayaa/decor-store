@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-// Swiper için **Gerekli Modülleri Import Et**
-import Swiper from 'swiper'; // Swiper sınıfı
-import { SwiperOptions } from 'swiper/types'; // Swiper için Type tanımları
+import Swiper from 'swiper';
+import { SwiperOptions } from 'swiper/types'; 
 
 declare var jQuery: any;
 
@@ -11,7 +10,7 @@ declare var jQuery: any;
   providedIn: 'root'
 })
 export class AnimeLoaderService {
-  private swiperInstances: Swiper[] = []; // ✅ HATA ÇÖZÜLDÜ
+  private swiperInstances: Swiper[] = [];
 
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
@@ -53,7 +52,7 @@ export class AnimeLoaderService {
           jQuery('.grid').isotope('layout');
         }, 300);
       } else {
-        console.error("Isotope başlatılamadı. jQuery veya Isotope eksik olabilir!");
+       // console.error("Isotope başlatılamadı. jQuery veya Isotope eksik olabilir!");
       }
     }, 500);
   }
@@ -61,11 +60,10 @@ export class AnimeLoaderService {
   reInitializeSwiper() {
     setTimeout(() => {
       if (typeof Swiper !== 'undefined') {
-        // **Eski Swiper örneklerini temizle**
+       
         this.swiperInstances.forEach(swiper => swiper.destroy(true, true));
         this.swiperInstances = [];
 
-        // **Tüm Swiper'ları yeniden başlat**
         document.querySelectorAll('.swiper').forEach((swiperElement) => {
           const swiperInstance = new Swiper(swiperElement as HTMLElement, {
             slidesPerView: "auto",
@@ -83,12 +81,12 @@ export class AnimeLoaderService {
               prevEl: ".slider-four-slide-prev-2"
             },
             effect: "slide"
-          } as SwiperOptions); // ✅ SwiperOptions Tipini Kullan
+          } as SwiperOptions); 
 
           this.swiperInstances.push(swiperInstance);
         });
       } else {
-        console.error("Swiper başlatılamadı. Swiper kütüphanesi eksik olabilir!");
+       // console.error("Swiper başlatılamadı. Swiper kütüphanesi eksik olabilir!");
       }
     }, 500);
   }

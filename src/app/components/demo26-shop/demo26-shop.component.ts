@@ -42,7 +42,7 @@ export class Demo26ShopComponent implements OnInit {
     link.href = href;
     link.type = 'text/css';
     document.head.appendChild(link);
-    console.log(`${href} CSS dosyası yüklendi.`);
+    //console.log(`${href} CSS dosyası yüklendi.`);
   }
 
   private loadScript(src: string, callback?: () => void) {
@@ -50,7 +50,7 @@ export class Demo26ShopComponent implements OnInit {
     script.src = src;
     script.async = true;
     script.onload = () => {
-      console.log(`${src} yüklendi.`);
+      //console.log(`${src} yüklendi.`);
       if (callback) callback();
     };
     document.body.appendChild(script);
@@ -63,9 +63,9 @@ export class Demo26ShopComponent implements OnInit {
           itemSelector: '.grid-item',
           layoutMode: 'masonry'
         });
-        console.log('Isotope başarıyla başlatıldı!');
+       // console.log('Isotope başarıyla başlatıldı!');
       } else {
-        console.error('Isotope yüklenemedi!');
+       // console.error('Isotope yüklenemedi!');
       }
     }, 1000);
   }
