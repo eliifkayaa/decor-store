@@ -796,6 +796,9 @@
                             columnWidth: '.grid-sizer',
                         }
                     });
+                    setTimeout(() => {
+                        _this.isotope('layout'); // Layout'u tekrar çalıştır
+                    }, 500);
                 }
                 isotopeObjs.push(_this);
                 var currentBlogActive = $('.blog-filter > li.active > a').attr('data-filter');
@@ -845,6 +848,9 @@
                             columnWidth: '.grid-sizer',
                         }
                     });
+                    setTimeout(() => {
+                        _this.isotope('layout'); // Layout'u tekrar çalıştır
+                    }, 500);
                 }
                 isotopeObjs.push(_this);
             });
