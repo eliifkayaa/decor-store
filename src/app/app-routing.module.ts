@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'right-sidebar', loadChildren: () => import('./components/demo-decor-store-right-sidebar/modules/right-sidebar.module').then(m => m.RightSidebarModule)},
   {path: 'product', loadChildren: () => import('./components/demo-decor-store-single-product/modules/single-product.module').then(m => m.SingleProductModule)},
   {path: 'wishlist', loadChildren: () => import('./components/demo-decor-store-wishlist/modules/wishlist.module').then(m => m.WishlistModule)},
-  {path: 'shop', loadChildren: () => import('./components/demo26-shop/modules/shop.module').then(m => m.ShopModule)},
+  {path: 'shop', loadChildren: () => import('./components/demo-decor-store-shop/modules/shop.module').then(m => m.ShopModule)},
   {path: '**', redirectTo: ''}
 ];
 

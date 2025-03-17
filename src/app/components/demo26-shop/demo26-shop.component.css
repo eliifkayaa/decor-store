@@ -1,8 +1,0 @@
-body:not(.loaded)>:not(.loading-overlay) * {
-    visibility: visible !important;
-    transition: none !important;
-}
-
-.loading-overlay {
-    position: relative;
-}
